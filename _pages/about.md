@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: <a href="https://cs.pku.edu.cn/">Department of Computer Science and Technology</a>.  <a href="https://pku.edu.cn/">Peking University</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
     <p>Yanyuan Mansion, Rm 816</p>
-    <p>151 North Zhongguancun Ave</p>
+    <p>151 N. Zhongguancun Ave</p>
     <p>Beijing, China</p>
 
 news: true  # includes a list of news items
