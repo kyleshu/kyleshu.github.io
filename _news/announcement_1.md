@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2021-06-25 15:48:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+Feel I need to have my own page. So I did it! :sparkles:
