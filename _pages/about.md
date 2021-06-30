@@ -8,8 +8,8 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>Yanyuan Mansion, Rm 816</p>
     <p>151 N. Zhongguancun Ave</p>
+    <p>Yanyuan Mansion, Rm 816</p>
     <p>Beijing, China</p>
 
 news: true  # includes a list of news items
@@ -20,4 +20,4 @@ I am a first-year Ph.D. student at Peking University, co-advised by [Prof. Hong 
 
 I graduated from University of California at Berkeley with a Bachelor's degree in Applied Mathematics and Computer Science in 2013. I joined Amazon Web Services after that, where I built distributed systems for account, product, and subscription management. I have also worked for companies in telecommunication sector, such as China Tower and China Telecom Bestpay.
 
-I am a foodie and I enjoy making new dishes. Japanese, Italian, Vietnamese and Middleterranean are among my favorites. I am also a wine lover. I passed WSET Level 2 with distinction and may pursue Level 3 someday. I like Gewürztraminer, Chardonnay, Riesling, and Pinot noir.
+I am a foodie and I enjoy making new dishes. Japanese, Italian, Vietnamese and Middleterranean are among my favorites. I am also a wine lover. I passed WSET Level 2 with distinction and may pursue Level 3 someday. I like Gewürztraminer, Chardonnay, Riesling, and Pinot Noir.
