@@ -83,6 +83,8 @@ then
 else
     git checkout -b $SRC_BRANCH
 fi
+git submodule init
+git submodule update
 
 # Checkout DEPLOY_BRANCH branch
 if [ `git branch | grep $DEPLOY_BRANCH` ]
