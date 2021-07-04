@@ -85,6 +85,7 @@ else
 fi
 git submodule init
 git submodule update
+ls themes
 
 # Checkout DEPLOY_BRANCH branch
 if [ `git branch | grep $DEPLOY_BRANCH` ]
@@ -92,6 +93,7 @@ then
   git branch -D $DEPLOY_BRANCH
 fi
 git checkout -b $DEPLOY_BRANCH
+ls themes
 
 # Build site
 bundle exec jekyll build
