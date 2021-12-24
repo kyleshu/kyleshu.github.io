@@ -2,21 +2,21 @@
 layout: about
 title: about
 permalink: /
-description: <a href="https://cs.pku.edu.cn/">Department of Computer Science and Technology</a>.  <a href="https://pku.edu.cn/">Peking University</a>. 
+description: <a href="https://cs.pku.edu.cn/">School of Computer Science</a>.  <a href="https://pku.edu.cn/">Peking University</a>. 
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
     <p>151 N. Zhongguancun Ave</p>
-    <p>Yanyuan Mansion, Rm 816</p>
+    <p>Yanyuan Mansion, Rm 818</p>
     <p>Beijing, China</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-I am a first-year Ph.D. student at Peking University, co-advised by [Prof. Hong Mei](http://faculty.pku.edu.cn/meih){:target="\_blank"} and [Prof. Xin Jin](https://xinjin.github.io/index.html){:target="\_blank"}. My research interests are around system software, more specifically, large-scale distributed systems and hardware-software co-design.
+I am a first-year Ph.D. student at Peking University, co-advised by [Prof. Hong Mei](http://faculty.pku.edu.cn/meih){:target="\_blank"} and [Prof. Xin Jin](https://xinjin.github.io/index.html){:target="\_blank"}. My research interests include disaggregated storage in data centers, and distributed systems over WAN.
 
 I graduated from University of California at Berkeley with a Bachelor's degree in Applied Mathematics and Computer Science in 2013. I joined Amazon Web Services after that, where I built distributed systems for account, product, and subscription management. I have also worked for companies in telecommunication sector, such as China Tower and China Telecom Bestpay.
 
