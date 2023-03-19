@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="https://cs.pku.edu.cn/">School of Computer Science</a>.  <a href="https://pku.edu.cn/">Peking University</a>. 
+description: <a href="https://cs.pku.edu.cn/">School of Computer Science</a>.  <a href="https://www.pku.edu.cn/">Peking University</a>. 
 
 profile:
   align: right
