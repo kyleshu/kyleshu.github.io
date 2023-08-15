@@ -16,7 +16,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-I am a third-year Ph.D. candidate at Peking University, co-advised by [Prof. Hong Mei](http://faculty.pku.edu.cn/meih){:target="\_blank"} and [Prof. Xin Jin](https://xinjin.github.io/index.html){:target="\_blank"}. My research interests lie in building disaggregated storage systems atop modern network/storage hardware (e.g., RDMA NICs, DPU & NVMe SSDs). I am currently working with Alibaba Cloud on improving elastic block storage.
+I am a third-year Ph.D. candidate at Peking University, co-advised by [Prof. Hong Mei](http://faculty.pku.edu.cn/meih){:target="\_blank"} and [Prof. Xin Jin](https://xinjin.github.io/index.html){:target="\_blank"}. My research interests lie in building disaggregated storage systems atop modern network/storage hardware (e.g., RDMA NIC, DPU & NVMe SSD). I am currently working with Alibaba Cloud on improving elastic block storage.
 
 I graduated from University of California at Berkeley with a Bachelor's degree in Applied Mathematics and Computer Science in 2013. I joined Amazon Web Services after that, where I built distributed systems for account, product, and subscription management. I have also worked for companies in telecommunication sector, such as China Tower and China Telecom Bestpay.
 
