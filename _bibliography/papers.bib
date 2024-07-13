@@ -1,6 +1,25 @@
 ---
 ---
 
+@inproceedings{OSDI24:BurstCBS,
+author = {Junyi Shu and Kun Qian and Ennan Zhai and Xuanzhe Liu and Xin Jin},
+title = {Burstable Cloud Block Storage with Data Processing Units},
+year = {2024},
+isbn = {978-1-939133-40-3},
+publisher = {USENIX Association},
+booktitle = {18th USENIX Symposium on Operating Systems Design and Implementation (OSDI 24)},
+address = {Santa Clara, CA},
+pages = {783--799},
+url = {https://www.usenix.org/conference/osdi24/presentation/shu},
+publisher = {USENIX Association},
+month = jul,
+abstract = {Cloud block storage (CBS) is a key pillar of public clouds. Today's CBS distinguishes itself from physical counterparts (e.g., SSDs) by offering unique burst capability as well as enhanced throughput, capacity, and availability. We conduct an initial characterization of our CBS product, a globally deployed cloud block storage service at public cloud provider Alibaba Cloud. A key observation is that the storage agent (SA) running on a data processing unit (DPU) which connects user VMs to the backend storage is the major source of performance fluctuation with burst capability provided. In this paper, we propose a hardware-software co-designed I/O scheduling system BurstCBS to address load imbalance and tenant interference at SA. BurstCBS exploits high-performance queue scaling to achieve near-perfect load balancing at line rate. To mitigate tenant interference, we design a novel burstable I/O scheduler that prioritizes resource allocation for base-level usage while supporting bursts. We employ a vectorized I/O cost estimator for comprehensive measurements of the consumed resources of different types of I/Os. Our evaluation shows that BurstCBS reduces average latency by up to 85% and provides up to 5× throughput for base-level tenants under congestion with minimal overhead. We verify the benefits brought by BurstCBS with a database service that internally relies on CBS, and show that up to 83% latency reduction is observed on customer workloads.},
+selected={true},
+abbr={OSDI},
+pdf={osdi24_BurstCBS_paper.pdf},
+slides={osdi24_BurstCBS_slides.pptx}
+}
+
 @inproceedings{ASPLOS23:dRAID,
 author = {Junyi Shu and Ruidong Zhu and Yun Ma and Gang Huang and Hong Mei and Xuanzhe Liu and Xin Jin},
 title = {Disaggregated RAID Storage in Modern Datacenters},
