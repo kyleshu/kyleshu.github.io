@@ -1,6 +1,25 @@
 ---
 ---
 
+@inproceedings {EuroSys26:LambdaReplica,
+author = {Junyi Shu and Xiaolong Huang and Gang Huang and Hong Mei and Xuanzhe Liu and Xin Jin},
+title = {{Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions}},
+year = {2026},
+isbn = {9798400722127},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3767295.3769367},
+doi = {10.1145/3767295.3769367},
+abstract = {Cross-cloud data replication is vital for improving reliability and performance. Since cloud providers lack native support, users turn to open-source solutions that rely on VMs. However, these are slow to provision, leading to high replication delays and costs. We propose a serverless approach for data replication using cloud functions, which cut provisioning overhead from tens of seconds to just a few. While functions offer sufficient bandwidth, they suffer from performance asymmetry across clouds and variability among instances. Our system, $\lambda$Replica, mitigates this uncertainty through proactive planning and adaptive runtime adjustments. Prior to replication, $\lambda$Replica formulates an SLO-compliant plan. During runtime, it employs decentralized scheduling to manage slow instances and uses changelog propagation and batching to further reduce costs. Implemented on three major clouds, $\lambda$Replica outperforms existing solutions by reducing replication delay by 61\%-99\% with cost savings of up to three orders of magnitude. On production traces, it keeps p99.99 replication delay below 10 seconds.},
+booktitle = {Proceedings of the Twenty-First European Conference on Computer Systems},
+keywords = {Cloud Computing, Serverless Computing, Data Replication, Object Storage},
+location = {Edinburgh, Scotland UK},
+series = {EuroSys 2026},
+selected={true},
+abbr={EuroSys},
+pdf={eurosys26_LambdaReplica_paper.pdf},
+}
+
 @inproceedings{OSDI24:BurstCBS,
 author = {Junyi Shu and Kun Qian and Ennan Zhai and Xuanzhe Liu and Xin Jin},
 title = {Burstable Cloud Block Storage with Data Processing Units},
