@@ -20,5 +20,5 @@ I am a postdoc researcher at UCLA, working with [Prof. Harry Xu](https://web.cs.
 
 I am a foodie and enjoy making new dishes. Japanese, Italian, Vietnamese and Mediterranean are among my favorites. I am also a wine lover. I passed WSET Level 2 and may pursue Level 3 someday. I like Gewürztraminer, Sauvignon Blanc, Riesling, and Pinot Noir.
 
-If you have questions regarding my research or want to discuss a potential collaboration, please drop me an email or book a meeting with me via [Google Calendar](https://calendar.app.google/nDyCpQuGiDP4YTBW7){:target="\_blank"}.
+If you have questions regarding my research or want to discuss potential collaboration, please drop me an email or book a meeting with me via [Google Calendar](https://calendar.app.google/nDyCpQuGiDP4YTBW7){:target="\_blank"}.
 
