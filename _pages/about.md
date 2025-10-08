@@ -16,7 +16,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-I am a postdoc researcher at UCLA, working with [Prof. Harry Xu](https://web.cs.ucla.edu/~harryxu/){:target="\_blank"}. My research interests lie in building efficient data management systems in the cloud for evolving use cases (e.g., LLM serving). I obtained my Ph.D. degree from Peking University, where I was adviced by [Prof. Xin Jin](https://xinjin.github.io/index.html){:target="\_blank"}. Before that, I graduated from University of California at Berkeley with a Bachelor's degree in Applied Mathematics and Computer Science.
+I am a postdoc researcher at UCLA, working with [Prof. Harry Xu](https://web.cs.ucla.edu/~harryxu/){:target="\_blank"}. My research interests lie in building efficient data management systems in the cloud for evolving use cases (e.g., LLM serving). I obtained my Ph.D. degree from Peking University, where I was advised by [Prof. Xin Jin](https://xinjin.github.io/index.html){:target="\_blank"}. Before that, I graduated from University of California at Berkeley with a Bachelor's degree in Applied Mathematics and Computer Science.
 
 I am a foodie and enjoy making new dishes. Japanese, Italian, Vietnamese and Mediterranean are among my favorites. I am also a wine lover. I passed WSET Level 2 and may pursue Level 3 someday. I like Gewürztraminer, Sauvignon Blanc, Riesling, and Pinot Noir.
 
