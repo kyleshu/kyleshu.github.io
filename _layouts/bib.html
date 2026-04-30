@@ -18,6 +18,14 @@
     {% else %}
       <div class="title">{{entry.title}}</div>
       <div class="author">
+        {% assign corresponding_list = "" | split: "" %}
+        {% if entry.corresponding %}
+          {% assign corresponding_list = entry.corresponding | split: ", " %}
+        {% endif %}
+        {% assign equal_list = "" | split: "" %}
+        {% if entry.equal %}
+          {% assign equal_list = entry.equal | split: ", " %}
+        {% endif %}
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
           {% if author.last == site.scholar.last_name%}
@@ -34,32 +42,47 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-          
+
+          {% assign full_name = author.first | append: " " | append: author.last %}
+          {% assign marker = "" %}
+          {% for e in equal_list %}
+            {% if e == full_name %}
+              {% assign marker = marker | append: "*" %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% for c in corresponding_list %}
+            {% if c == full_name %}
+              {% assign marker = marker | append: "#" %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.first}} {{author.last}}</em>
+              <em>{{author.first}} {{author.last}}</em>{{marker}}
             {% else %}
-              {{author.first}} {{author.last}}
+              {{author.first}} {{author.last}}{{marker}}
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em>{{author.first}} {{author.last}}</em>,
+                <em>{{author.first}} {{author.last}}</em>{{marker}},
               {% else %}
                 {% if coauthor_url %}
-                  <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>,
+                  <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>{{marker}},
                 {% else %}
-                  {{author.first}} {{author.last}},
+                  {{author.first}} {{author.last}}{{marker}},
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.first}} {{author.last}}</em>
+                and <em>{{author.first}} {{author.last}}</em>{{marker}}
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                  and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>{{marker}}
                 {% else %}
-                  and {{author.first}} {{author.last}}
+                  and {{author.first}} {{author.last}}{{marker}}
                 {% endif %}
               {% endif %}
             {% endunless %}
