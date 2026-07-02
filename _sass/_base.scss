@@ -430,6 +430,19 @@ footer.sticky-bottom {
           border-radius: 50%;
           background-color: white;
         }
+        // USENIX badges are square stamps. Use a round-cornered rectangle tag
+        // (coherent with the square logo, vs. ACM's round capsule) and show the
+        // full stamp via object-fit: contain (inherited) so nothing is cropped.
+        .ae-badge.ae-vendor-usenix {
+          gap: 0.35rem;
+          padding: 0.22rem 0.55rem 0.22rem 0.28rem;
+          border-radius: 7px;
+        }
+        .ae-vendor-usenix .ae-badge-icon {
+          height: 1.3rem;
+          width: 1.3rem;
+          border-radius: 2px;
+        }
         .ae-available {
           background-color: #008b00;
         }
