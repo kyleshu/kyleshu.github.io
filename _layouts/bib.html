@@ -154,6 +154,35 @@
     {% endif %}
     </div>
 
+    {% if entry.badges %}
+    <div class="ae-badges">
+      {% assign badge_list = entry.badges | split: "," %}
+      {% for raw_badge in badge_list %}
+        {% assign badge = raw_badge | strip | downcase %}
+        {% assign badge_img = nil %}
+        {% assign badge_label = nil %}
+        {% assign badge_class = "" %}
+        {% case badge %}
+          {% when "available" %}
+            {% assign badge_img = "available.png" %}{% assign badge_label = "Artifacts Available" %}{% assign badge_class = "ae-available" %}
+          {% when "functional" %}
+            {% assign badge_img = "functional.png" %}{% assign badge_label = "Artifacts Functional" %}{% assign badge_class = "ae-functional" %}
+          {% when "reusable" %}
+            {% assign badge_img = "reusable.png" %}{% assign badge_label = "Artifacts Reusable" %}{% assign badge_class = "ae-reusable" %}
+          {% when "reproduced" %}
+            {% assign badge_img = "reproduced.png" %}{% assign badge_label = "Results Reproduced" %}{% assign badge_class = "ae-reproduced" %}
+          {% when "replicated" %}
+            {% assign badge_img = "replicated.png" %}{% assign badge_label = "Results Replicated" %}{% assign badge_class = "ae-replicated" %}
+          {% else %}
+            {% assign badge_label = raw_badge | strip %}
+        {% endcase %}
+        <span class="ae-badge {{ badge_class }}">
+          {% if badge_img %}<img class="ae-badge-icon" src="{{ badge_img | prepend: '/assets/img/badges/' | relative_url }}" alt="{{ badge_label }}">{% endif %}<span class="ae-badge-text">{{ badge_label }}</span>
+        </span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <!-- Hidden abstract block -->
     {% if entry.abstract %}
     <div class="abstract hidden">
