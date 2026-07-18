@@ -459,6 +459,12 @@ footer.sticky-bottom {
           background-color: #0361dc;
         }
       }
+      .note {
+        margin-top: 0.3rem;
+        font-size: 0.85rem;
+        font-style: italic;
+        color: var(--global-theme-color);
+      }
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
