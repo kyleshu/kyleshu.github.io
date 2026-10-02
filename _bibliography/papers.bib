@@ -1,6 +1,22 @@
 ---
 ---
 
+@ARTICLE{ToN26:COSMOS,
+  author={Jia, Yunshan and Shu, Junyi and Lou, Chiheng and Liu, Fangyue and Bi, Chenbo and Jin, Xin},
+  journal={IEEE Transactions on Networking}, 
+  title={COSMOS: Taming Heterogeneous Resource Demands in Serverless Functions with Complementary Swarming and Monotonic Scale-up}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={},
+  keywords={Central Processing Unit;Memory;Resource management;Routing;Modeling;Loading;Algorithms;Schedules;Scheduling;Conferences;Serverless computing;Resource-aware scheduling;Heterogeneous resource utilization},
+  abstract={Serverless computing is an increasingly popular paradigm built on top of a data center network (DCN), offering scalability and fine-grained billing. However, serverless platforms must efficiently manage resources for a multitude of diverse functions and requests with different inputs. Conventional approaches often ignore differences in resource requirements between functions and individual requests, leading to resource fragmentation, poor cluster utilization, and high overhead from instance initializations. This paper introduces COSMOS, a novel serverless computing system that improves efficiency across nodes in a cluster by exploiting the complementary resource usage patterns of different functions. Our approach is founded on two key optimizations. First, we route functions with complementary resource requirements to the same node to maximize node utilization, while simultaneously grouping instances of the same function to improve locality and reduce associated overhead. Second, we leverage the emerging capability to resize an instance’s resource allocation, allowing our system to reuse existing warm instances for requests with heterogeneous resource demands and minimize instance initializations. Experiments on real-world workloads show that our system improves CPU and memory utilization by up to 46.91% and 45.00%, respectively, and increases overall throughput by up to 2.01x compared to state-of-the-art serverless computing systems.},
+  doi={10.1109/TON.2026.3738563},
+  abbr={ToN},
+  corresponding={Junyi Shu},
+  pdf={ton_COSMOS_paper.pdf}
+}
+
 @inproceedings{OSDI26:Prism,
 author = {Shan Yu and Yifan Qiao and Mingyuan Ma and Yangmin Li and Shuo Yang and Xinyuan Tong and Yang Wang and Zhiqiang Xie and Yuwei An and Shiyi Cao and Ke Bao and Deepak Vij and Xiaoning Ding and Yichen Wang and Qingda Lu and Zhong Wang and Gao Gao and Harry Xu and Junyi Shu and Jiarong Xing and Ying Sheng},
 title = {Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning},
