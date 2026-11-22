@@ -398,6 +398,12 @@ footer.sticky-bottom {
       }
       .title {
         font-weight: bolder;
+        a {
+          color: var(--global-text-color);
+          &:hover {
+            color: var(--global-theme-color);
+          }
+        }
       }
       .ae-badges {
         margin-top: 0.4rem;
@@ -474,7 +480,7 @@ footer.sticky-bottom {
           }
         }
         > em {
-          border-bottom: 1px solid;
+          font-weight: bold;
           font-style: normal;
         }
       }

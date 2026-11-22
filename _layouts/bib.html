@@ -16,7 +16,15 @@
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
+      {% assign title_url = entry.url %}
+      {% if title_url == nil and entry.doi %}
+        {% assign title_url = entry.doi | prepend: "https://doi.org/" %}
+      {% endif %}
+      {% if title_url %}
+      <div class="title"><a href="{{ title_url }}" target="_blank" rel="noopener noreferrer">{{entry.title}}</a></div>
+      {% else %}
       <div class="title">{{entry.title}}</div>
+      {% endif %}
       <div class="author">
         {% assign corresponding_list = "" | split: "" %}
         {% if entry.corresponding %}
